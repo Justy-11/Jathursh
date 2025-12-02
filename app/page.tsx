@@ -204,7 +204,7 @@ export default function Home() {
 
                 <div className="flex flex-wrap gap-4 pt-4">
                   <Link
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/@AI_Genso"
                     className="group flex items-center gap-2 px-3 py-1 text-xs border border-foreground text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
                   >
                     <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
@@ -280,6 +280,10 @@ export default function Home() {
                   description: "Thumbnails, AI portraits, branding visuals, product edits, and enhancements.",
                 },
                 {
+                  title: "AI Voice & Music",
+                  description: "Voice cloning, AI voice-overs, and generative music beds tailored to your content.",
+                },
+                {
                   title: "Website Creation",
                   description: "Fast, modern, minimal websites optimized for speed, conversion, and branding.",
                 },
@@ -300,7 +304,7 @@ export default function Home() {
 
             <div className="pt-8 flex flex-col sm:flex-row justify-center gap-8 sm:gap-12">
               <Link
-                href="#"
+                href="https://drive.google.com/drive/folders/1m8Gf6zvFajzDqiNRUK3mmIiBtlav3VL2?usp=sharing"
                 className="group flex items-center justify-center gap-2 text-foreground hover:text-muted-foreground transition-colors duration-300"
               >
                 <span>→ View Samples</span>
