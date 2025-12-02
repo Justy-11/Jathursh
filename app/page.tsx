@@ -173,7 +173,7 @@ export default function Home() {
           ref={(el) => {
             sectionsRef.current[0] = el
           }}
-          className="min-h-screen flex items-center opacity-0"
+          className="min-h-screen flex items-start sm:items-center opacity-0 pt-16 sm:pt-0"
         >
           <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
             <div className="lg:col-span-3 space-y-6 sm:space-y-8">
