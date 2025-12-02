@@ -329,7 +329,7 @@ export default function Home() {
           <div className="space-y-12 sm:space-y-16">
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
               <h2 className="text-3xl sm:text-4xl font-light">Selected Work</h2>
-              <div className="text-sm text-muted-foreground font-mono">2023</div>
+              {/* <div className="text-sm text-muted-foreground font-mono">2023</div> */}
             </div>
 
             <div className="space-y-8 sm:space-y-12">
@@ -396,10 +396,20 @@ export default function Home() {
                     <h3 className="text-lg sm:text-xl font-medium">Software Engineer Intern - Backend</h3>
                   </div>
                   <p className="text-muted-foreground leading-relaxed max-w-lg">
-                    Developed and optimized backend microservices using Spring Boot and RESTful architecture. Performed
+                    {/* Developed and optimized backend microservices using Spring Boot and RESTful architecture. Performed
                     root cause analysis, debugging, and unit testing across financial and e-commerce applications.
                     Collaborated using Git, CI/CD, Docker, and Postman to ensure maintainable and scalable code
-                    delivery.
+                    delivery. */}
+                    <span className="block">
+                      - Developed and optimized backend microservices using Spring Boot and RESTful architecture.
+                    </span>
+                    <span className="block">
+                      - Performed root cause analysis, debugging, and unit testing across financial and e-commerce applications.
+                    </span>
+                    <span className="block">
+                      - Collaborated using Git, CI/CD, Docker, and Postman to ensure maintainable and scalable code
+                      delivery.
+                    </span>
                   </p>
                 </div>
 
