@@ -310,7 +310,7 @@ export default function Home() {
                 <span>→ View Samples</span>
               </Link>
               <Link
-                href="#"
+                href="https://forms.gle/PyaybRZtDdHRv2Pk6"
                 className="group flex items-center justify-center gap-2 text-foreground hover:text-muted-foreground transition-colors duration-300"
               >
                 <span>→ Submit a Request</span>
@@ -431,28 +431,28 @@ export default function Home() {
             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
               {[
                 {
-                  title: "The Future of Web Development",
-                  excerpt: "Exploring how AI and automation are reshaping the way we build for the web.",
-                  date: "Dec 2024",
-                  readTime: "5 min",
-                },
-                {
-                  title: "Design Systems at Scale",
-                  excerpt: "Lessons learned from building and maintaining design systems across multiple products.",
-                  date: "Nov 2024",
-                  readTime: "8 min",
-                },
-                {
-                  title: "Performance-First Development",
-                  excerpt: "Why performance should be a first-class citizen in your development workflow.",
-                  date: "Oct 2024",
+                  title: "Hook, Retention, PayOff",
+                  excerpt: "How to structure AI-generated videos that hook viewers in the first 3 seconds, maintain retention, and deliver satisfying payoffs.",
+                  date: "Jan 2025",
                   readTime: "6 min",
                 },
                 {
-                  title: "The Art of Code Review",
-                  excerpt: "Building better software through thoughtful and constructive code reviews.",
-                  date: "Sep 2024",
-                  readTime: "4 min",
+                  title: "SpringBoot APIs",
+                  excerpt: "Best practices for designing RESTful microservices, handling concurrency, and optimizing database queries in production.",
+                  date: "Dec 2024",
+                  readTime: "8 min",
+                },
+                {
+                  title: "Python Automation",
+                  excerpt: "Scripting workflows for batch AI image generation, video processing pipelines, and YouTube automation using Python.",
+                  date: "Nov 2024",
+                  readTime: "5 min",
+                },
+                {
+                  title: "AI Voice Cloning",
+                  excerpt: "Navigating the technical and ethical considerations of TTS models, voice synthesis, and content authenticity.",
+                  date: "Oct 2024",
+                  readTime: "7 min",
                 },
               ].map((post, index) => (
                 <article
@@ -534,10 +534,10 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { name: "GitHub", handle: "@justy11", url: "#" },
-                  { name: "v0.dev", handle: "@jathursh11-4767", url: "#" },
-                  { name: "HubSpot Community", handle: "@justy11", url: "#" },
-                  { name: "LinkedIn", handle: "jathurshan-pathmarasa-53b267365", url: "#" },
+                  { name: "GitHub", handle: "@Justy11", url: "https://github.com/Justy-11" },
+                  { name: "v0.dev", handle: "@jathursh11", url: "https://v0.app/@jathursh11-4767" },
+                  { name: "Instagram", handle: "@justy11", url: "https://instagram.com/justy__11" },
+                  { name: "LinkedIn", handle: "@Jathurshan Pathmarasa", url: "https://www.linkedin.com/in/jathurshan-pathmarasa-53b267365/" },
                 ].map((social) => (
                   <Link
                     key={social.name}
@@ -560,8 +560,8 @@ export default function Home() {
         <footer className="py-12 sm:py-16 border-t border-border">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
             <div className="space-y-2">
-              <div className="text-sm text-muted-foreground">© 2025 Justy. All rights reserved.</div>
-              <div className="text-xs text-muted-foreground">Built with v0.dev by Justy</div>
+              <div className="text-sm text-muted-foreground">© 2025 Jathursh. All rights reserved.</div>
+              <div className="text-xs text-muted-foreground">Built with v0.dev by Jathursh</div>
             </div>
 
             <div className="flex items-center gap-4">
@@ -616,10 +616,10 @@ export default function Home() {
           <aside className="hidden lg:flex sticky top-1/2 -translate-y-1/2 h-fit flex-col gap-4">
             <div className="rounded-2xl border border-border bg-muted/20 p-5 space-y-3">
               <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-muted-foreground">Google AdSense</div>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              {/* <p className="text-sm text-muted-foreground leading-relaxed">
                 Reserve a responsive ad slot here. Drop your{" "}
                 <code className="font-mono text-xs">ins.adsbygoogle</code> container and script to monetize long-form sessions.
-              </p>
+              </p> */}
               <div className="h-32 w-full rounded-xl bg-background border border-dashed border-border flex items-center justify-center text-xs text-muted-foreground">
                 300×600 media
               </div>
@@ -627,9 +627,9 @@ export default function Home() {
 
             <div className="rounded-2xl border border-border bg-background/70 p-5 space-y-4">
               <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-muted-foreground">Partner highlight</div>
-              <p className="text-sm text-muted-foreground">
+              {/* <p className="text-sm text-muted-foreground">
                 Swap in newsletter promos, affiliate mentions, or product announcements without touching the hero layout.
-              </p>
+              </p> */}
               <button className="w-full rounded-full border border-foreground/40 px-4 py-2 text-xs uppercase tracking-[0.3em] hover:bg-foreground hover:text-background transition-colors duration-300">
                 Request media kit
               </button>
