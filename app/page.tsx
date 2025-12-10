@@ -373,7 +373,7 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="flex flex-wrap gap-2 lg:justify-end">
-                    {["Kling 1.6", "Sora 2", "CapCut", "Canva"].map((tool) => (
+                    {["Kling 1.6", "Sora 2", "CapCut", "Canva", "RunwayML", "Photoshop","After Effects"].map((tool) => (
                       <span
                         key={tool}
                         className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
@@ -413,15 +413,27 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
-                  {["SpringBoot", "MySQL", "Mockito"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="lg:col-span-4 mt-2 lg:mt-0 space-y-2">
+                  <div className="flex flex-wrap gap-2 lg:justify-end">
+                    {["SpringBoot", "MySQL", "Mockito"].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap gap-2 lg:justify-end">
+                    {["Postman"].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
