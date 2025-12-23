@@ -113,7 +113,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground relative">
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
         <div className="flex flex-col gap-4">
-          {["intro", "services", "work", "thoughts", "connect"].map((section) => (
+          {["intro", "services", "pricing", "work", "thoughts", "connect"].map((section) => (
             <button
               key={section}
               onClick={() => document.getElementById(section)?.scrollIntoView({ behavior: "smooth" })}
@@ -266,10 +266,10 @@ export default function Home() {
           }}
           className="py-20 sm:py-32 opacity-0"
         >
-          <div className="space-y-12 sm:space-y-16">
+          <div className="space-y-10 sm:space-y-12">
             <h2 className="text-3xl sm:text-4xl font-light">Services</h2>
 
-            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid md:grid-cols-3 gap-6 sm:gap-7">
               {[
                 {
                   title: "AI Video Generation",
@@ -290,7 +290,7 @@ export default function Home() {
               ].map((service, index) => (
                 <div
                   key={index}
-                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg"
+                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 will-change-transform"
                 >
                   <div className="space-y-4">
                     <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
@@ -302,19 +302,98 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="pt-8 flex flex-col sm:flex-row justify-center gap-8 sm:gap-12">
+            <p className="text-center text-sm text-muted-foreground">
+              Custom pricing based on Requirements
+            </p>
+
+            <div className="pt-4 sm:pt-5 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
               <Link
                 href="https://drive.google.com/drive/folders/1m8Gf6zvFajzDqiNRUK3mmIiBtlav3VL2?usp=sharing"
-                className="group flex items-center justify-center gap-2 text-foreground hover:text-muted-foreground transition-colors duration-300"
+                className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-border text-foreground hover:border-foreground hover:bg-foreground/5 transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.35)]"
               >
-                <span>→ View Samples</span>
+                View Samples
               </Link>
               <Link
                 href="https://forms.gle/PyaybRZtDdHRv2Pk6"
-                className="group flex items-center justify-center gap-2 text-foreground hover:text-muted-foreground transition-colors duration-300"
+                className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-foreground bg-foreground text-background hover:bg-transparent hover:text-foreground transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.45)]"
               >
-                <span>→ Submit a Request</span>
+                Request a Quote
               </Link>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="pricing"
+          ref={(el) => {
+            sectionsRef.current[2] = el
+          }}
+          className="py-20 sm:py-32 opacity-0"
+        >
+          <div className="space-y-12 sm:space-y-16">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+              <h2 className="text-3xl sm:text-4xl font-light">AI Video Pricing</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+              {[
+                {
+                  title: "AI Product Video (0–30 sec)",
+                  price: "$20",
+                  features: ["Cinematic AI video", "Smooth animation", "Social media ready", "Fast delivery"],
+                },
+                {
+                  title: "AI Product Video (30–60 sec)",
+                  price: "$40",
+                  features: ["Cinematic AI video", "Smooth animation", "Social media ready", "Fast delivery"],
+                },
+              ].map((plan) => (
+                <div
+                  key={plan.title}
+                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 will-change-transform flex flex-col gap-6"
+                >
+                  <div className="space-y-3">
+                    <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
+                      {plan.title}
+                    </h3>
+                    <div className="text-3xl sm:text-4xl font-light">{plan.price}</div>
+                  </div>
+                  <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-2">
+                        <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-foreground/60" aria-hidden />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <div className="space-y-6 flex flex-col items-center">
+              <div className="w-full max-w-2xl rounded-lg border border-foreground/20 bg-muted/30 p-5 sm:p-6 text-center shadow-[0_6px_24px_-18px_rgba(0,0,0,0.45)]">
+                <p className="text-sm sm:text-base leading-relaxed">
+                  🎁 First 10 orders get 30% OFF
+                  <br />
+                  Use code: FIRST30
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <Link
+                  href="https://forms.gle/PyaybRZtDdHRv2Pk6"
+                  className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-foreground bg-foreground text-background hover:bg-transparent hover:text-foreground transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.45)]"
+                >
+                  Submit a Request
+                </Link>
+                <Link
+                  href="https://wa.me/?text=Hi%2C%20I%20want%20an%20AI%20product%20video%20(FIRST30)"
+                  className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-border text-foreground hover:border-foreground hover:bg-foreground/5 transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.35)]"
+                  aria-label="Open WhatsApp chat with pre-filled message for AI product video"
+                >
+                  WhatsApp Me
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -322,7 +401,7 @@ export default function Home() {
         <section
           id="work"
           ref={(el) => {
-            sectionsRef.current[2] = el
+            sectionsRef.current[3] = el
           }}
           className="min-h-screen py-20 sm:py-32 opacity-0"
         >
@@ -443,7 +522,7 @@ export default function Home() {
         <section
           id="thoughts"
           ref={(el) => {
-            sectionsRef.current[3] = el
+            sectionsRef.current[4] = el
           }}
           className="min-h-screen py-20 sm:py-32 opacity-0"
         >
@@ -519,7 +598,7 @@ export default function Home() {
         <section
           id="connect"
           ref={(el) => {
-            sectionsRef.current[4] = el
+            sectionsRef.current[5] = el
           }}
           className="py-20 sm:py-32 opacity-0"
         >
