@@ -218,8 +218,14 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="group flex items-center gap-2 px-3 py-1 text-xs border border-foreground text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
                   >
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM4 19h16v-2H4z" />
+                    <svg
+                      className="w-5 h-5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M7.5 22H4a.5.5 0 0 1-.5-.6L7.3 2.7a.5.5 0 0 1 .5-.4h6.8c3.8 0 6.3 1.9 6.3 5.4 0 4.4-3 7-7.7 7h-2.3l-.8 5.9a.5.5 0 0 1-.5.4z" />
+                      <path d="M15 2.4h-2.9c-.3 0-.5.2-.5.5l-2.5 16h2.8c.3 0 .5-.2.5-.5l.7-4.8h2.2c4.2 0 7.1-2.5 7.1-6.6 0-3.4-2.5-5.1-6.9-5.1zm-1.1 7.1h-1.9l.3-2h1.6c.8 0 1.4-.6 1.4-1.4S15.3 4.7 14.5 4.7h-4.1l-.3 2h3.2c.8 0 1.4.6 1.4 1.4s-.7 1.4-1.5 1.4z" />
                     </svg>
                     Support / Pay via PayPal
                   </Link>
