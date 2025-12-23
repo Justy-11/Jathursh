@@ -379,16 +379,16 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+              <div className="flex w-full flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 sm:w-auto">
                 <Link
                   href="https://forms.gle/PyaybRZtDdHRv2Pk6"
-                  className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-foreground bg-foreground text-background hover:bg-transparent hover:text-foreground transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.45)]"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-foreground bg-foreground text-background hover:bg-transparent hover:text-foreground transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.45)]"
                 >
                   Submit a Request
                 </Link>
                 <Link
                   href="https://wa.me/?text=Hi%2C%20I%20want%20an%20AI%20product%20video%20(FIRST30)"
-                  className="inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-border text-foreground hover:border-foreground hover:bg-foreground/5 transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.35)]"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-border text-foreground hover:border-foreground hover:bg-foreground/5 transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.35)]"
                   aria-label="Open WhatsApp chat with pre-filled message for AI product video"
                 >
                   WhatsApp Me
