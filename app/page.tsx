@@ -213,13 +213,15 @@ export default function Home() {
                     YouTube
                   </Link>
                   <Link
-                    href="https://buymeacoffee.com"
+                    href="https://paypal.me/Jathursh"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group flex items-center gap-2 px-3 py-1 text-xs border border-foreground text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
                   >
                     <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM4 19h16v-2H4z" />
                     </svg>
-                    Buy Me a Coffee
+                    Support / Pay via PayPal
                   </Link>
                 </div>
               </div>
@@ -387,7 +389,7 @@ export default function Home() {
                   Submit a Request
                 </Link>
                 <Link
-                  href="https://wa.me/?text=Hi%2C%20I%20want%20an%20AI%20product%20video%20(FIRST30)"
+                  href="https://wa.me/97430080741?text=Hi%2C%20I%20want%20an%20AI%20product%20video.%20Code%3A%20FIRST30"
                   className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-border text-foreground hover:border-foreground hover:bg-foreground/5 transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.35)]"
                   aria-label="Open WhatsApp chat with pre-filled message for AI product video"
                 >
