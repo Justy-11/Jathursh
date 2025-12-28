@@ -434,16 +434,16 @@ export default function Home() {
                   </div>
                   <p className="text-muted-foreground leading-relaxed max-w-lg space-y-1">
                     <span className="block">
-                      - AI image generation using Nano-Banana and DALL·E for thumbnails, concepts, and visual branding.
+                      - AI image generation and Editing for thumbnails, concepts, and visual branding.
                     </span>
                     <span className="block">
-                      - AI video generation from text/image prompts with Wan 2.5, Kling 1.6, and Sora 2 for shorts and long-form.
+                      - AI short form video generation and Editing for Social Media, YouTube, and Branding Videos.
                     </span>
                     <span className="block">
                       - Running an independent AI YouTube channel focused on AI-generated stories, shorts, and viral story ideas.
                     </span>
                     <span className="block">
-                      - AI voice cloning and narration using TTS models, plus editing pipelines in CapCut and Canva.
+                      - AI voice cloning and narration using TTS models for audio content.
                     </span>
                   </p>
                 </div>
@@ -460,7 +460,7 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="flex flex-wrap gap-2 lg:justify-end">
-                    {["Kling 1.6", "Sora 2", "CapCut", "Canva", "RunwayML", "Photoshop","After Effects"].map((tool) => (
+                    {["Kling 1.6", "Sora 2", "Veo 3", "Google Flow Studio", "CapCut", "Canva", "RunwayML", "Photoshop","After Effects"].map((tool) => (
                       <span
                         key={tool}
                         className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:border-muted-foreground/50 transition-colors duration-500"
