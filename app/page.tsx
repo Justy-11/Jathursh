@@ -407,6 +407,122 @@ export default function Home() {
         </section>
 
         <section
+          className="py-20 sm:py-32"
+        >
+          <div className="space-y-12 sm:space-y-16">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+              <h2 className="text-3xl sm:text-4xl font-light">Social Media Management Packages</h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+              {[
+                {
+                  title: "BASIC",
+                  price: "USD 550",
+                  period: "/ month",
+                  subtitle: "Best for small businesses starting online",
+                  features: [
+                    "12–15 short-form videos (Reels / TikTok)",
+                    "12 static posts or carousels",
+                    "Instagram, TikTok & Facebook",
+                    "Caption writing + hashtags",
+                    "Basic ad creatives (no heavy scaling)",
+                    "Monthly content calendar",
+                    "DM support text templates",
+                  ],
+                  excluded: [
+                    "Ad budget not included",
+                    "No Google SEO",
+                  ],
+                },
+                {
+                  title: "STANDARD ⭐",
+                  price: "USD 820",
+                  period: "/ month",
+                  subtitle: "Most businesses choose this plan",
+                  features: [
+                    "15–20 videos (AI + real visuals)",
+                    "20–30 posts (reels + images)",
+                    "Instagram, TikTok & Facebook",
+                    "2–3 paid ad creatives per month",
+                    "Meta Ads setup & management",
+                    "Google Maps optimization",
+                    "Basic SEO (keywords + business description)",
+                    "Monthly performance report",
+                    "WhatsApp CTA optimization",
+                  ],
+                  note: "👉 Ad spend paid separately by client",
+                },
+                {
+                  title: "PREMIUM",
+                  price: "USD 1230",
+                  period: "/ month",
+                  subtitle: "For luxury & high-traffic businesses",
+                  features: [
+                    "30+ videos (daily reels)",
+                    "30–40 posts",
+                    "Instagram, TikTok, Facebook & YouTube Shorts",
+                    "Weekly ad creatives",
+                    "Full ad scaling strategy",
+                    "Google Maps ranking optimization",
+                    "SEO for business-related keywords",
+                    "Google reviews growth strategy",
+                    "Priority support",
+                  ],
+                },
+              ].map((plan) => (
+                <div
+                  key={plan.title}
+                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-muted-foreground/50 transition-all duration-500 hover:shadow-lg hover:-translate-y-1 will-change-transform flex flex-col gap-6"
+                >
+                  <div className="space-y-3">
+                    <h3 className="text-lg sm:text-xl font-medium group-hover:text-muted-foreground transition-colors duration-300">
+                      {plan.title}
+                    </h3>
+                    <div className="text-3xl sm:text-4xl font-light">
+                      {plan.price}
+                      <span className="text-lg sm:text-xl text-muted-foreground">{plan.period}</span>
+                    </div>
+                    {plan.subtitle && (
+                      <p className="text-sm text-muted-foreground">{plan.subtitle}</p>
+                    )}
+                  </div>
+                  <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed flex-grow">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-2">
+                        <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-foreground/60 flex-shrink-0" aria-hidden />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                    {plan.excluded && plan.excluded.map((excluded) => (
+                      <li key={excluded} className="flex items-start gap-2 text-xs text-muted-foreground/60">
+                        <span className="mt-[6px] text-muted-foreground/40" aria-hidden>✖</span>
+                        <span>{excluded}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {plan.note && (
+                    <p className="text-xs text-muted-foreground/70 pt-2 border-t border-border/50">
+                      {plan.note}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div className="flex w-full flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 sm:w-auto pt-4">
+              <Link
+                href="https://wa.me/97430080741?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20Social%20Media%20Management%20Packages."
+                className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 text-sm font-medium border border-border text-foreground hover:border-foreground hover:bg-foreground/5 transition-all duration-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.35)]"
+                aria-label="Open WhatsApp chat for Social Media Management Packages"
+              >
+                WhatsApp Me
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section
           id="work"
           ref={(el) => {
             sectionsRef.current[3] = el
