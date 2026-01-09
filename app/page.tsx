@@ -239,7 +239,7 @@ export default function Home() {
                 <div className="space-y-3">
                   <div className="space-y-2">
                     <div className="text-foreground">Freelancer</div>
-                    <div className="text-muted-foreground">@ Fiverr</div>
+                    <div className="text-muted-foreground">@ Upwork @ Fiverr </div>
                     <div className="text-xs text-muted-foreground">2024 - present</div>
                   </div>
                   <div className="space-y-2 pt-3 border-t border-border/50">
@@ -252,7 +252,7 @@ export default function Home() {
                 <div className="space-y-3 pt-3 border-t border-border/50">
                   <div className="text-sm text-muted-foreground font-mono">FOCUS</div>
                   <div className="flex flex-wrap gap-2">
-                    {["Django", "SpringBoot", "Machine Learning", "AI Content Creation"].map((tag) => (
+                    {["Django", "SpringBoot", "Machine Learning", "AI Content Creation", "Digital Marketing"].map((tag) => (
                       <span
                         key={tag}
                         className="px-2 py-1 text-xs border border-foreground/30 text-muted-foreground rounded"
