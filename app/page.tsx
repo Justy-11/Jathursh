@@ -346,14 +346,14 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
               {[
                 {
-                  title: "AI Product Video (0–30 sec)",
-                  price: "$20",
-                  features: ["Cinematic AI video", "Smooth animation", "Social media ready", "Fast delivery"],
+                  title: "AI Product Video (15–30 sec)",
+                  price: "$39",
+                  features: ["Cinematic AI video", "Smooth animation", "Social media ready", "Fast delivery - 1 day"],
                 },
                 {
                   title: "AI Product Video (30–60 sec)",
-                  price: "$40",
-                  features: ["Cinematic AI video", "Smooth animation", "Social media ready", "Fast delivery"],
+                  price: "$69",
+                  features: ["Cinematic AI video", "Smooth animation", "Social media ready", "Fast delivery - 2 days"],
                 },
               ].map((plan) => (
                 <div
@@ -418,12 +418,12 @@ export default function Home() {
               {[
                 {
                   title: "BASIC",
-                  price: "USD 550",
+                  price: "USD 549",
                   period: "/ month",
                   subtitle: "Best for small businesses starting online",
                   features: [
-                    "12–15 short-form videos (Reels / TikTok)",
-                    "12 static posts or carousels",
+                    "4 short-form videos (Reels / TikTok)",
+                    "4 static posts or carousels",
                     "Instagram, TikTok & Facebook",
                     "Caption writing + hashtags",
                     "Basic ad creatives (no heavy scaling)",
@@ -437,12 +437,12 @@ export default function Home() {
                 },
                 {
                   title: "STANDARD ⭐",
-                  price: "USD 820",
+                  price: "USD 819",
                   period: "/ month",
                   subtitle: "Most businesses choose this plan",
                   features: [
-                    "15–20 videos (AI + real visuals)",
-                    "20–30 posts (reels + images)",
+                    "6 videos (AI + real visuals)",
+                    "4 posts (reels + images)",
                     "Instagram, TikTok & Facebook",
                     "2–3 paid ad creatives per month",
                     "Meta Ads setup & management",
@@ -455,12 +455,12 @@ export default function Home() {
                 },
                 {
                   title: "PREMIUM",
-                  price: "USD 1230",
+                  price: "USD 1229",
                   period: "/ month",
                   subtitle: "For luxury & high-traffic businesses",
                   features: [
-                    "30+ videos (daily reels)",
-                    "30–40 posts",
+                    "6 videos (AI + real visuals)",
+                    "4 posts (reels + images)",
                     "Instagram, TikTok, Facebook & YouTube Shorts",
                     "Weekly ad creatives",
                     "Full ad scaling strategy",
